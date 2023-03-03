@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator_Style.css"> 
+</head>
+
+<body>
+    <main>
+        <input class="text" type="text" disabled>
+        <div class="button-wrap">
+            <button data-type="ac" class="ac">AC</button><!-- data type : dataset 함수를 사용하기 위한 속성 -->
+            <button data-type="operator">&divide;</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button data-type="operator">&times;</button><!--곱하기와 나누기의 기호 모양은 컴퓨터 언어로 사용하는 *, /과 다름-->
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button data-type="operator">-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button data-type="operator">+</button>
+            <button class="zero">0</button>
+            <button>.</button>
+            <button data-type="equals" class="equals">=</button>
+        </div>
+    </main>
+    <script src="Calculator_Controller.js"></script>
+</body>
+</html>
