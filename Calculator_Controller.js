@@ -17,16 +17,16 @@ class Calculator {
         this.displayElement.value = this.displayContent 
     }
 
-    clear() {
+    clear() { //첫 화면 또는 ac버튼
         this.displayContent = ''
         this.displayElement.value = 0
     }
 
-    compute() {
-        this.displayContent = eval(this.displayContent
-            .replace('\u00D7', '*')
-            .replace('\u00F7', '/')
-        ) //"\u00D7" 는 ×, "\u00F7"는 ÷를 의미
+    compute() { //숫자 계산함수.
+        this.displayContent = eval(this.displayContent //eval : 문자열로 입력된 숫자나 연산기호를 알아서 연산함.
+            .replace('\u00D7', '*') //곱하기와 나누기 기호를 컴퓨터 언어로
+            .replace('\u00F7', '/') //"\u00D7" 는 ×, "\u00F7"는 ÷를 의미
+        ) 
     }
 }
 const buttons = document.querySelectorAll('button')
@@ -39,7 +39,7 @@ buttons.forEach(button => {
         switch (button.dataset.type) {
             case 'operator':
                 console.log('operator')
-                calculator.appendOperator(button.innerText)
+                calculator.appendOperator(button.innerText)//누른 버튼의 data type에 따라 실행. data type이 없는게 숫자들임.
                 calculator.updateDisplay()
                 break
             case 'ac':
