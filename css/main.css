@@ -1,0 +1,277 @@
+
+
+* {
+  margin: 0 auto;
+  background-color: rgb(247, 246, 246);
+  font-family:'Gill Sans', 'Gill Sans MT', Cambria, Cochin, Georgia, Times, 'Times New Roman', Arial, Helvetica, sans-serif, 'Trebuchet MS', sans-serif;
+}
+body {
+    width: 750px;
+    height: 1000px;
+    text-align: center;
+    border: 1px solid #863f3f00;
+}
+.language {
+  width: 90px;
+  height: 30px;
+  border: 1px solid rgb(216, 216, 216);
+  background-color: #fff;
+  margin-top: 20px;
+  font-size: 80%;
+  float: right;
+  padding: 2px;
+}
+
+.logotap{
+    width: 600px;
+    height: 940px;
+    /* border: 1px solid #863f3f; */
+    margin-top: 45px;
+
+}
+
+.tap1{
+    width: 470px;
+    height: 840px;
+    /* border: 1px solid #863f3f; */
+    margin-top: 50px;
+}
+
+.tap2{
+    width: 470px;
+    height: 765px;
+    /* border: 1px solid #863f3f; */
+    margin-top: 25px;
+    margin-left: -1px;
+}
+
+.tap3{
+    width: 470px;
+    height: 570px;
+    /* border: 1px solid #863f3f; */
+    margin-top: 25px;
+    margin-left: -1px;
+}
+
+.tap4{
+    width: 470px;
+    height: 400px;
+    /* border: 1px solid #863f3f; */
+    margin-top: 25px;
+    margin-left: -1px;
+}
+.tap5{
+    width: 470px;
+    height: 250px;
+    /* border: 1px solid #863f3f; */
+    margin-top: 25px;
+    margin-left: -1px;
+}
+.tap6{
+    width: 470px;
+    height: 210px;
+    /* border: 1px solid #863f3f; */
+    margin-top: 130px;
+    margin-left: -1px;
+}
+
+.logo > img {
+    width: 245px;
+    height: 45px;
+}
+
+#Check_2{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -20px;
+    width: 20px;
+    float: left;
+}
+#Check_3{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -20px;
+    width: 20px;
+    float: left;
+}
+#Check_4{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -20px;
+    width: 20px;
+    float: left;
+}
+.font1{
+    font-size: 90%;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+.font2{
+    font-size: 90%;
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: -230px;
+}
+.font3{
+    font-size: 90%;
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: -190px;
+}
+.font4{
+    font-size: 90%;
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: -170px;
+}
+.font5{
+    font-size: 90%;
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: -210px;
+}
+.font6{
+    font-size: 73%;
+    text-align: left;
+    width: 450px;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-bottom: 30px;
+
+}
+.font7 {
+    margin-top: 15px;
+    font-size: 76%;
+    text-align: center;
+    color: #443f3f;
+}
+
+.spanGrren{
+    font-size: 80%;
+    color: #34b41b;
+    font-weight: 400;
+
+    
+}
+.spanGray{
+    font-size: 80%;
+    color: #777676;
+    font-weight: 400;
+    
+}
+
+.spanLink{
+    color: #000000;
+}
+
+.scrollBox{
+    overflow:scroll;
+    width:425px; 
+    height:60px;
+    margin-top: 10px;
+    padding:13px;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid #dad8d8;
+    overflow-x:hidden;
+    font-size: 78%;
+    text-align: left;
+    
+}
+
+.cancelBtn{
+        cursor: pointer;
+        width: 225px;
+        height: 50px;
+        border: 1px solid rgb(214, 214, 214);
+        background-color: #979292;
+        font-weight: 400;
+        font-size: 110%;
+        margin-right: 0;
+        color: #fff;
+      }
+
+#enterBtn{
+    cursor: pointer;
+    width: 225px;
+    height: 50px;
+    border: 1px solid rgb(214, 214, 214);
+    background-color: #2bc23f;
+    font-weight: 400;
+    font-size: 110%;
+    margin-right: 0;
+    color: #fff;
+}
+input[type=checkbox] {
+    display : none;
+}
+
+#mainCheck_ + label {
+    cursor: pointer;
+}
+#mainCheck_ + label img{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -20px;
+    width: 25px;
+    float: left;
+}
+#mainCheck_:checked + label img {
+    content: url("../img/top_check_button_on.png");
+}
+
+#Check_1_ + label {
+    cursor: pointer;
+}
+#Check_1_ + label img{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -20px;
+    width: 20px;
+    float: left;
+}
+#Check_1_:checked + label img {
+    content: url("../img/middle_check_button_on.png");
+}
+
+#Check_2_ + label {
+    cursor: pointer;
+}
+#Check_2_ + label img{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -20px;
+    width: 20px;
+    float: left;
+}
+#Check_2_:checked + label img {
+    content: url("../img/middle_check_button_on.png");
+}
+
+#Check_3_ + label {
+    cursor: pointer;
+}
+#Check_3_ + label img{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -20px;
+    width: 20px;
+    float: left;
+}
+#Check_3_:checked + label img {
+    content: url("../img/middle_check_button_on.png");
+}
+
+#Check_4_ + label {
+    cursor: pointer;
+}
+#Check_4_ + label img{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -20px;
+    width: 20px;
+    float: left;
+}
+#Check_4_:checked + label img {
+    content: url("../img/middle_check_button_on.png");
+}

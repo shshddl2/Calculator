@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>네이버: 회원가입</title>
+  <link rel="stylesheet" href="css/join.css" />
+  <script type="text/javascript" src="script/join.js"></script>
+</head>
+           
+    <div name ="spaceTap15" class="spaceTap15">              <!--height15만큼 빈공간 생성-->
+    </div>
+    <div name ="spaceTap15" class="spaceTap15">            
+    </div>
+    <div name ="spaceTap15" class="spaceTap15">            
+    </div>
+
+<body>
+  <header>   
+
+
+ 
+    <div name="logo" class="logoTap">                       <!--로고-->
+      <div>
+        <a href="http://www.naver.com"><img src="img/Naver_Logotype.svg.png" alt="logo" /></a>
+      </div>
+    </div>
+  </header>
+
+  <div name ="spaceTap25" class="spaceTap25">              <!--height25만큼 빈공간 생성-->
+  </div>
+  <form action = "complete.html" method = "get">
+  <div name="manu" class="menuTap">                        <!--아이디-->
+    <h5>아이디</h5>
+  </div>
+
+  <div name="textTap" class="textTap">                   
+
+    <div class="textBoxTap">
+    
+      <div class="textBox" id = "id">
+
+        <input type="text" class="inputText" id = "inputId" onblur="checkId()">             <!--아이디 입력-->
+         
+       <span class="idBox">@naver.com</span>               
+      </div>
+
+    </div>
+  </div>
+  <p id = "warningId" style="display : none">영문, 숫자 6~20자만 가능합니다.</p>
+  <div name ="spaceTap15" class="spaceTap15">       
+  </div>
+
+  <div name="manu" class="menuTap">                        <!--비번-->  
+    <h5>비밀번호</h5>
+  </div>
+  <div name="textTap" class="textTap">    
+
+    
+
+      <div class="imgCrop">                               <!--자물쇠 이미지-->  
+        <img class="lockPassword " src="img/m_icon_pw_step.png" />
+     </div>
+
+      <div class= "textBox" id = "password">    
+        <input type="password" class="inputText" id = "inputPassword" onblur="checkPassword()">         <!--비번 입력-->
+      </div>
+
+    </div>
+  </div>
+  <p id="warningPassword" style="display : none;">8 ~ 16자 영문, 숫자, 특수문자를 최소 한가지씩 조합해야 합니다.</p>
+  <div name ="spaceTap15" class="spaceTap15">   
+  </div>
+  <div name="manu" class="menuTap">                       <!--비번 재확인-->  
+    <h5>비밀번호 재확인</h5>
+  </div>
+  <div name="textTap" class="textTap">
+    
+       
+
+      <div class="imgCrop">                          <!--체크자물쇠 이미지-->  
+        <img class="lockPasswordCheck" src="img/m_icon_pw_step.png" />
+     </div>
+
+    <div class="textBoxTap">
+ 
+      <div class= "textBox">    
+        <input type="password" class="inputText" id="inputPasswordCheck" onblur="isSamePassword()">         <!--비번 재확인 입력-->
+      </div>
+      <p id="warningPasswordCheck" style="display : none;">비밀번호가 일치하지 않습니다.</p>
+    </div>
+  </div>
+
+  <div name ="spaceTap15" class="spaceTap15">   
+  </div>
+  <div name ="spaceTap15" class="spaceTap15">   
+  </div>
+
+  <div name="manu" class="menuTap">                        <!--이름-->  
+    <h5>이름</h5>
+  </div>
+  <div name="textTap" class="textTap">   
+    <div class="textBoxTap">
+
+      <div class= "textBox">    
+        <input type="text" class="inputText" id = "inputName" onblur = "isNameEmpty()">              <!--이름 입력-->
+      </div>
+      <p id = "emptyName" style = "display : none">이름을 입력해주세요.</p>
+    </div>
+  </div>
+
+  <div name ="spaceTap15" class="spaceTap15">  
+  </div>
+
+  <div name="manu" class="menuTap">                        <!--생년월일-->  
+    <h5>생년월일</h5>
+  </div>
+      
+      <div class= "multiBoxFont">    
+        <input type="text" id = "year" class="yearBox" placeholder="년(4자)" onblur="birthCheck()">     <!--연도 입력-->
+
+      <div class="monthSelectBoxTap">                               <!--월 선택-->
+        <select class="monthSelectBox" id = "month" onblur="birthCheck()">
+          <option value="check" checked>월</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="5">4</option>
+          <option value="4">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+
+        <input type="text" id = "day" class="dayBox" placeholder="일" onblur="birthCheck()">     <!--일 입력-->
+      </div>
+    </div><br>
+      <p id = "yearCheck" style = "display : none;">연도를 확인해주세요.</p>
+      <p id = "monthCheck" style = "display : none;">월을 확인해주세요.</p>
+      <p id = "dayCheck" style = "display : none;">날짜를 확인해주세요.</p>
+    </div>
+  </div>
+
+  <div name ="spaceTap15" class="spaceTap15">   
+  </div>
+ 
+  <div name="manu" class="menuTap">                         <!--성별-->  
+    <h5>성별</h5> 
+  </div>
+  <div class="genderSelectBoxTap">
+    <select class="genderSelectBox" id = "gender" onblur = "genderCheck()">                       <!--성별 선택-->  
+      <option value="check" checked>성별</option>
+      <option value="1">남성</option>
+      <option value="2">여성</option>
+      <option value="3">선택 안함</option>
+    </select>
+  </div>
+  <p id = "genderCheck" style="display : none">성별을 선택해주세요.</p>
+
+  <div name ="spaceTap15" class="spaceTap15">   
+  </div>
+
+  <div name="manu" class="menuTap">                         <!--이메일-->  
+    <h5>본인 확인 이메일<span class="check">(선택)</span></h5>
+  </div>
+  <div name="textTap" class="textTap">   
+    <div class="textBoxTap">
+
+      <div class= "textBox">    
+        <input type="text" id = "email" class="inputText" placeholder="선택 입력" onblur="emailCheck()">          <!--이메일 입력-->
+      </div>
+      <p id = "emailCheck" style="display : none">유효한 이메일이 아닙니다. 지우거나 다시 입력해주세요.</p>
+    </div>
+  </div>
+
+  <div name ="spaceTap15" class="spaceTap15">   
+  </div>
+  <div name ="spaceTap15" class="spaceTap15">   
+  </div>
+
+  <div name="manu" class="menuTap">                         <!--휴대전화-->  
+    <h5>휴대전화</h5>
+  </div>
+  <div name="textTap" class="textTap">   
+    <div class="textBoxTap">
+
+      <div class="countrySelectBoxTap">                           <!--국적 선택--> 
+        <select class="countrySelectBox">
+          <option value="check">대한민국 +82</option>
+          <option value="233">가나 +233</option>
+          <option value="86">중국 +86</option>
+          <option value="1">미국 +1</option>
+          <option value="44">영국 +44</option>
+          <option value="81">일본 +81</option>
+        </select>
+      </div>
+    </div>
+    </div>
+
+      <div name ="spaceTap15" class="spaceTap10">  
+      </div>
+
+      <div class="multiBoxFont">    
+        <input type="text" id="phoneNumber" class="phoneBox" placeholder="전화번호 입력">               <!--휴대전화 입력-->
+
+      <input type="button" value="인증번호 받기" class="phoneSummitButton" onclick="checkPhone()"></input>    <!--인증번호받기 버튼-->
+      </div>
+      <div name ="spaceTap15" class="spaceTap10">  
+      </div>
+
+      <div id= "certBox">    
+        <input type="text" id="cert" placeholder="인증번호를 입력하세요">               <!--인증번호 입력-->
+      </div>
+      <p id = "wrongNumber" style="display : none;">전화번호 형식이 맞지 않습니다.</p>
+      <p id = "guide" style = "display : none;">인증번호가 발송되었습니다.</p>
+      <div name ="spaceTap15" class="spaceTap25">   
+      </div>
+
+        <input type="button" id = "final" onclick="checkValue()" value="가입하기" class="summitButton"></input> 
+      </div>                                                                                 <!--가입하기 버튼-->
+    </form>
+      <div name ="spaceTap25" class="spaceTap25">            
+      </div>
+      </div>
+    </div>
+
+      <div class ="footer"> 
+
+       이용약관&emsp;<B>개인정보처리방침</B>&emsp;책임의 한계와 법적고지&emsp;회원정보 고객센터           
+      </div>
+      <div name="logo" class="logodown">                                                       <!--footer로고이미지-->
+        <div>
+          <a href="https://www.navercorp.com/"           ><img src="img/Naver_Logotype.svg.png" alt="logo" /></a>
+
+          <div class ="footer">    
+          Copyright NAVER Corp. All Rights Reserved.
+        </div>
+        <div name ="spaceTap15" class="spaceTap15">            
+        </div>
+      </div>  
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

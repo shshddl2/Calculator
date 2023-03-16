@@ -1,0 +1,364 @@
+* {                         /*전체 마진 폰트 조정*/
+  margin: 0 auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 101%;
+}
+
+h5 {                       
+  font-size: 90%;
+}
+body {
+  width: 460px;
+  height: 1250px;
+  text-align: center;
+  background-color: #f7f4f4;
+}
+p { 
+  float: left; 
+  font-size: small;
+  font-weight: bolder;
+  color: red;
+}
+
+.logoTap {                  /*헤더 로고*/
+  width: 460px;
+  height: 50px;
+  /* border: 1px solid #863f3f; */
+}
+.logoTap > div > a > img {
+  width: 240px;
+  height: 44px;
+}
+.spaceTap25 {              /*스페이스탭*/
+  width: 460px;
+  height: 25px;
+  margin-top: 10px;
+  /* border: 1px solid #863f3f; */
+}
+.spaceTap15 {
+  width: 460px;
+  height: 15px;
+  margin-top: 5px;
+  /* border: 1px solid #863f3f; */
+}
+
+.spaceTap10 {
+  width: 460px;
+  height: 15px;
+  /* border: 1px solid #863f3f; */
+}
+ 
+.menuTap {                  /*메뉴 탭*/
+  width: 460px; 
+  height: 25px;
+  /* border: 1px solid #863f3f; */
+  text-align: left;
+}
+
+.textTap {                   /*텍스트박스 외부 탭*/
+  width: 460px;
+  height: 50px;
+  /* border: 1px solid #863f3f; */
+
+}
+.textBox {                   /*텍스트박스 내부 탭*/
+  width: 460px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #dad8d8;
+  font-size: 78%;
+  text-align: left;
+}
+.textBox:focus-within {                   /*텍스트박스 내부 탭*/
+  width: 458px;
+  height: 48px;
+  background-color: white;
+  border: 2px solid rgb(8, 228, 0);
+  font-size: 78%;
+  text-align: left;
+}
+.inputText {                    /*텍스트박스*/
+    padding: 14.0px 15px 14.0px 13px;
+    border: none;
+    font-size: 130%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 330px;
+    
+}
+
+.idBox{                        /*아이디 예시*/
+    float: right;
+    font-size: 120%;
+    color: #707070;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    padding-right: 14px;
+    padding-top: 14px;
+}
+
+.summitButton{                 /*가입하기 버튼*/
+  width: 465px;
+  height: 55px;
+  background-color: rgb(55, 187, 88);
+  border: 1px solid #dad8d8;
+  font-size: 110%;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer; 
+}
+
+input:focus {outline: none;}      
+
+
+input::placeholder {              
+    font-size: 85%;
+    color: #707070;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+  }
+
+.imgCrop {                    /*자물쇠 이미지 조정*/
+    position: relative;
+    float: right;
+    width: 28px; 
+    height: 28px;
+    overflow: hidden;
+    margin-top: 12px;
+    margin-right: 9.6px;
+}
+.lockPassword {
+        bottom: 28px; 		
+        right: 28px;
+        width: 125px; 
+}
+.lockPasswordCheck {
+  bottom: 28px; 		
+  right: 28px;
+  width: 125px; 
+}
+.yearBox{                      /*연도 입력*/                     
+    width: 131px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #dad8d8;
+    font-size: 130%;
+    text-align: left;
+    margin-right: 6px;
+    padding-left: 15px;
+    display: inline-block;
+}
+.yearBox:focus-within{                      /*연도 입력*/                     
+  width: 129px;
+  height: 43px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(8, 228, 0);
+}
+
+.monthSelectBoxTap{                  /*월 선택*/    
+  display: inline-block;
+}
+.monthSelectBox{                      
+    width: 146px;
+    height: 49px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #dad8d8;
+    font-size: 110%;
+    text-align: left;
+    margin-right: 6px;
+    padding-left: 10px;
+    display: inline-block;
+}
+.monthSelectBox:focus-within{                      
+  border: 2px solid rgb(8, 228, 0);
+}
+
+.dayBox{                             /*일 입력*/  
+    width: 126px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #dad8d8;
+    font-size: 130%;
+    text-align: left;
+    padding-left: 15px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.dayBox:focus-within{                             /*일 입력*/  
+  width: 124px;
+  height: 43px;
+  border: 2px solid rgb(8, 228, 0);
+}
+
+.genderSelectBoxTap{                    /*성별 선택*/  
+    display: inline-block;
+  }
+.genderSelectBox{
+      width: 460px;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid #dad8d8;
+      font-size: 88%;
+      text-align: left;
+      margin-right: 6px;
+      padding-left: 10px;
+      display: inline-block;
+  }
+  .genderSelectBox:focus-within{
+    border: 2px solid rgb(8, 228, 0);
+}
+
+  .countrySelectBoxTap{                 /*국적 선택*/ 
+    display: inline-block;
+  }
+  .countrySelectBox{
+      width: 460px;
+      height: 44.5px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid #dad8d8;
+      font-size: 88%;
+      text-align: left;
+      margin-right: 6px;
+      padding-left: 10px;
+      display: inline-block;
+  }
+  .countrySelectBox:focus{
+    width: 460px;
+    height: 44.5px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(8, 228, 0);
+
+}
+
+  .phoneBox{                              /*전화번호 입력*/ 
+    width: 320px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #dad8d8;
+    font-size: 130%;
+    text-align: left;
+    margin-right: 6px;
+    padding-left: 10px;
+    display: inline-block;
+ 
+}
+.phoneBox:focus{                              /*전화번호 입력*/ 
+  width: 318px;
+  height: 43px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(8, 228, 0);
+}
+
+
+.phoneMultiBoxFont{                       
+    font-size: 80%;
+}
+
+.multiBoxFont{                             /*한 탭에 여러박스 구성될 때 조정*/ 
+    width: 460px; 
+    height: 50px;
+    font-size: 78%;
+    text-align: left;
+
+}
+
+.phoneSummitButton{                          /*인증번호 받기 버튼*/ 
+    width: 116.6px; 
+    height: 50px;
+    background-color: rgb(55, 187, 88);
+    border: 1px solid #dad8d8;
+    font-size: 115%;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer; 
+  }
+
+  .check{                                         /*선택사항 span tag*/ 
+    font-size: 80%;
+    color: #a3a1a1;
+  }
+
+  .footer{                                       /*footer text*/ 
+    font-size: 75%;
+    display: inline-block;
+  }
+
+  .logodown>div>a>img{                         /*footer logo*/ 
+    width: 60px;
+  }
+select {
+  outline: none;
+}
+#certBox{                   /*텍스트박스 내부 탭*/
+  pointer-events: none;
+  cursor: pointer;
+  width: 460px;
+  height: 50px;
+  background-color: #f7f4f4;
+  border: 1px solid #dad8d8;
+  font-size: 78%;
+  text-align: left;
+}
+#certBox:focus-within {                   /*텍스트박스 내부 탭*/
+  width: 460px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid rgb(8, 228, 0);
+  font-size: 78%;
+  text-align: left;
+}
+#certBox_success{                   /*텍스트박스 내부 탭*/
+  cursor: pointer;
+  width: 460px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #dad8d8;
+  font-size: 78%;
+  text-align: left;
+}
+#certBox_success:focus-within {                   /*텍스트박스 내부 탭*/
+  width: 460px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid rgb(8, 228, 0);
+  font-size: 78%;
+  text-align: left;
+}
+#cert {                    /*텍스트박스*/
+  padding: 14.0px 15px 14.0px 13px;
+  border: none;
+  background-color: #f7f4f4;
+  font-size: 130%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 330px;
+  
+}
+#cert:focus {                    /*텍스트박스*/
+  padding: 14.0px 15px 14.0px 13px;
+  border: none;
+  background-color: white;
+  font-size: 130%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 330px;
+  
+}
+#cert_success {                    /*텍스트박스*/
+  padding: 14.0px 15px 14.0px 13px;
+  border: none;
+  background-color: white;
+  font-size: 130%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 330px;
+  
+}
+#cert_success:focus {                    /*텍스트박스*/
+  padding: 14.0px 15px 14.0px 13px;
+  border: none;
+  background-color: white;
+  font-size: 130%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 330px;
+  
+}
+
